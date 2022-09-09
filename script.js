@@ -11,21 +11,9 @@ const ampm = document.getElementById('ampm')
          h=h-12
      ampm.innerText="PM"
    }
-if(h>9)
-    hour.textContent=h
-else 
-   hour.textContent=`0${h}`
-
-if(m>9)
-    minutes.innerText=m
-else
-   minutes.innerText=`0${m}`
-if(s>9)
-   seconds.innerText=s
-else
-   seconds.innerText=`0${s}`
-
-   
+hour.innerText = h>9 ? h : "0"+h 
+minutes.innerText = m>9 ? m : "0"+m 
+seconds.innerText = s>9 ? s : "0"+s   
 }
 
 setInterval(
